@@ -1,0 +1,17 @@
+{
+    "editor.fontFamily": "Roboto Mono, 'Courier New', monospace",
+    "editor.fontWeight": "200",
+    "workbench.fontAliasing": "default",
+    "terminal.integrated.fontWeight": "200",
+    "terminal.integrated.fontWeightBold": "200",
+    "terminal.integrated.lineHeight": 1.1,
+    "window.zoomLevel": 0,
+    "workbench.colorTheme": "Spacemacs - dark",
+    "editor.fontSize": 13,
+    "terminal.integrated.fontSize": 13,
+    "editor.renderWhitespace": "all",
+    "workbench.iconTheme": "vs-minimal",
+    "workbench.activityBar.visible": false,
+    "editor.fontLigatures": true,
+    "editor.rulers": [80, 120],
+}

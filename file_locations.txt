@@ -1,0 +1,6 @@
+[sublime-settings]: $HOME/Library/Application Support/Sublime Text 3/Packages/User/Preferences.sublime-settings
+[vscode-setttings]: $HOME/Library/Application Support/Code/User/settings.json
+[]: $HOME/.editorconfig
+[]: $HOME/.nvmrc
+[]: $HOME/.zshrc
+[]: $HOME/.spacemacs
