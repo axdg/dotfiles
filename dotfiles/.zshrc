@@ -127,7 +127,7 @@ load-nvmrc &> /dev/null
 # Go support
 export GOPATH=$HOME/.go
 export PATH=$PATH:/usr/local/opt/go/libexec/bin
-alias gopath="cd $GOPATH" 
+alias gopath="cd $GOPATH"
 
 # Julia support
 
@@ -139,7 +139,7 @@ alias gopath="cd $GOPATH"
 #   _/ |\__'_|_|_|\__'_|  |  Official http://julialang.org/ release
 #  |__/                   |  x86_64-apple-darwin13.4.0
 
-# You could also symlink - run; 
+# You could also symlink - run;
 # sudo ln -s /Applications/Julia-0.6.app/Contents/Resources/julia/bin/julia /usr/bin/julia
 export PATH="/Applications/Julia-0.6.app/Contents/Resources/julia/bin:$PATH"
 
@@ -147,31 +147,31 @@ export PATH="/Applications/Julia-0.6.app/Contents/Resources/julia/bin:$PATH"
 # See `https://github.com/JuliaLang/IJulia.jl`
 export JUPYTER=/usr/local/bin/jupyter
 
-#               .?77777777777777$.            
-#               777..777777777777$+           
-#              .77    7777777777$$$           
-#              .777 .7777777777$$$$           
-#              .7777777777777$$$$$$           
-#              ..........:77$$$$$$$           
-#       .77777777777777777$$$$$$$$$.=======.  
-#      777777777777777777$$$$$$$$$$.========  
-#      777777777777777$$$$$$$$$$$$$.========= 
-#      7777777777777$$$$$$$$$$$$$$$.========= 
+#               .?77777777777777$.
+#               777..777777777777$+
+#              .77    7777777777$$$
+#              .777 .7777777777$$$$
+#              .7777777777777$$$$$$
+#              ..........:77$$$$$$$
+#       .77777777777777777$$$$$$$$$.=======.
+#      777777777777777777$$$$$$$$$$.========
+#      777777777777777$$$$$$$$$$$$$.=========
+#      7777777777777$$$$$$$$$$$$$$$.=========
 #      77777777777$$$$$$$$$$$$$$$$ :========+.
 #      7777777777$$$$$$$$$$$$$$+..=========++~
 #      77777777$$..~=====================+++++
 #      7777777$~.~~~~=~=================+++++.
 #      77777$$$.~~~===================+++++++.
-#      7777$$$$.~~==================++++++++: 
-#      7$$$$$$$.==================++++++++++. 
-#      .,$$$$$$.================++++++++++~.  
-#              .=========~.........           
-#              .=============++++++           
-#              .===========+++..+++           
-#              .==========+++.  .++           
-#               ,=======++++++,,++,           
-#               ..=====+++++++++=.            
-#      				 ..~+=... 
+#      7777$$$$.~~==================++++++++:
+#      7$$$$$$$.==================++++++++++.
+#      .,$$$$$$.================++++++++++~.
+#              .=========~.........
+#              .=============++++++
+#              .===========+++..+++
+#              .==========+++.  .++
+#               ,=======++++++,,++,
+#               ..=====+++++++++=.
+#      				 ..~+=...
 
 # Set the `PYTHON` env var for PyPlot for Julia to find
 # See `https://github.com/JuliaPy/PyPlot.jl`
@@ -198,10 +198,6 @@ alias functions="functions-emulator"
 
 # Set the default application credentials (gcloud) - for running GCP apps locally.
 export GOOGLE_APPLICATION_CREDENTIALS="/Users/agimenez/gcloud-service-key.json"
-
-# Set the gcloud insights project, or botnet project... these should probably be env vars.
-alias p_insights="gcloud config set project insight-186822"
-alias p_botnet="gcloud config set project botnet-inc"
 
 # Generate a uuid using `hex` - or you could also use `uuidgen`.
 alias uuid="python -c 'import sys,uuid; sys.stdout.write(uuid.uuid4().hex)' | pbcopy && pbpaste && echo"
