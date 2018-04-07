@@ -4,3 +4,4 @@
 []: $HOME/.nvmrc
 []: $HOME/.zshrc
 []: $HOME/.spacemacs
+[]: $HOME/.keras/keras.json
