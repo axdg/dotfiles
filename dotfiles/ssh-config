@@ -1,0 +1,13 @@
+# ssh config of;
+# axdg <axdg@dfant.asia>
+#
+# Located @ `~/.ssh/config`.
+
+Host *
+  Port 22
+  IdentityFile ~/.ssh/id_rsa
+
+Host github
+  HostName github.com
+  IdentityFile ~/.ssh/id_rsa
+
