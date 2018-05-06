@@ -6,3 +6,5 @@
 []: $HOME/.zshrc
 []: $HOME/.spacemacs
 []: $HOME/.keras/keras.json
+[]: $HOME/pylintrc
+[]: $HOME/.style.yapf
