@@ -14,4 +14,7 @@
     "workbench.activityBar.visible": false,
     "editor.fontLigatures": true,
     "editor.rulers": [80, 120],
+    "files.exclude": {
+      "**/**.pyc": true
+    },
 }
