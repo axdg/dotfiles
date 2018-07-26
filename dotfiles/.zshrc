@@ -202,15 +202,14 @@ export GOOGLE_APPLICATION_CREDENTIALS="/Users/agimenez/gcloud-service-key.json"
 # Generate a uuid using `hex` - or you could also use `uuidgen`.
 alias uuid="python -c 'import sys,uuid; sys.stdout.write(uuid.uuid4().hex)' | pbcopy && pbpaste && echo"
 
+# Generate an ISO 8601 timestamp @ UTC.
+alias ts node -e 'console.log(new Date().toISOString())' | tee >(pbcopy)
+
 # Inkscape CLI tools (commented out, since symlinked instead)
 # alias inkscape="/Applications/Inkscape.app/Contents/Resources/bin/inkscape"
 # ln -s /Applications/Inkscape.app/Contents/Resources/bin/inkscape /usr/local/bin
 
-# Get currencies conversion rates from fixer.io
-# alias fxrates="curl -s https://api.fixer.io/latest?base=AUD | python -m json.tool"
-alias fx="$GOPATH/src/fx/./fx"
-
-# Echo a header
+# Echo a header:
 echo "
  /**
   * ==================================== >

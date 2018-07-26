@@ -17,4 +17,6 @@
     "files.exclude": {
       "**/**.pyc": true
     },
+    "editor.minimap.enabled": false,
+    "javascript.updateImportsOnFileMove.enabled": "always",
 }
