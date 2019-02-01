@@ -177,8 +177,13 @@ export JUPYTER=/usr/local/bin/jupyter
 # See `https://github.com/JuliaPy/PyPlot.jl`
 export PYTHON=/usr/local/bin/python3
 
+# pyenv.
+if command -v pyenv 1>/dev/null 2>&1; then
+  eval "$(pyenv init -)"
+fi
+
 # Quickly set the virtualenv
-alias venv="css && . ./penv/bin/activate"
+alias venv="css && . ./venv/bin/activate"
 
 # Jupyter's `jupyter notebook` does not have tab completion
 alias notebook="jupyter notebook"
@@ -204,10 +209,6 @@ alias uuid="python -c 'import sys,uuid; sys.stdout.write(uuid.uuid4().hex)' | pb
 
 # Generate an ISO 8601 timestamp @ UTC.
 alias ts node -e 'console.log(new Date().toISOString())' | tee >(pbcopy)
-
-# Inkscape CLI tools (commented out, since symlinked instead)
-# alias inkscape="/Applications/Inkscape.app/Contents/Resources/bin/inkscape"
-# ln -s /Applications/Inkscape.app/Contents/Resources/bin/inkscape /usr/local/bin
 
 # Echo a header:
 echo "
